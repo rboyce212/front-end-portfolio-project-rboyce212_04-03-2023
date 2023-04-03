@@ -1,0 +1,279 @@
+:root {
+  --md-dark-color: #1d1d1d;
+  --dark-color: #171717;
+  --light-dark-color: #292929;
+  --yellor-color: #d4aa11;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: auto;
+  display: block;
+}
+
+#mainlogo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.wrapper {
+  min-height: auto;
+  background-color: black;
+}
+
+.logo {
+  align-items: center;
+}
+
+.wrapper .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.search-container {
+  background-color: dimgray;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-element {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.search-element h3 {
+  align-self: center;
+  margin-right: 16px;
+  font-size: 32px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 24px;
+}
+
+.search-element .form-control {
+  padding: 16px 32 px;
+  font-size: 22px;
+  border: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  outline: none;
+  color: black;
+  width: 350px;
+}
+
+.search-list {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  max-height: 500px;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+.search-list .search-list-item {
+  background-color: var(--light-dark-color);
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--dark-color);
+  width: calc(350px - 8px);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+}
+
+.search-list .search-list-item:hover {
+  background-color: #1f1f1f;
+}
+
+.search-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.search-item-thumbnail img {
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.search-item-info h3 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.search-item-info p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+/* thumbnail */
+.search-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+search-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+.search-list::-webkit-scrollbar-thumb {
+  background-color: var(--yellor-color);
+  outline: none;
+  border-radius: 10px;
+}
+
+.hide-search-list {
+  display: none;
+}
+
+.result-container {
+  padding: 3rem 0;
+  background-color: black;
+}
+
+.poster {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 4px solid rgb(238, 229, 229);
+}
+
+.movie-info {
+  text-align: center;
+  color: #fff;
+  padding-top: 3rem;
+}
+
+.movie-title {
+  font-size: 32px;
+  color: var(--yellor-color);
+}
+
+.misc-info {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.movie-info .year {
+  font-weight: 600;
+  margin: -2px 3px;
+}
+
+.movie-info .rated {
+  background-color: rgb(60, 60, 57);
+  padding: 4px 5px;
+  margin: -2px 3px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.movie-info .released {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.movie-info .writer {
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.movie-info .genre {
+  background-color: lightslategray;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.movie-info .plot {
+  max-width: 400px;
+  margin: 1rem 0;
+}
+
+.movie-info .language {
+  color: yellow;
+}
+
+.movie-info .awards {
+  font-weight: 300;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.movie-info .awards i {
+  color: gold;
+  margin: 1rem 0.7rem 0 0;
+}
+
+@media (max-width: 450px) {
+  .logo p {
+    font-size: 1.4rem;
+  }
+  .search-element .form-control {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+  .search-element h3 {
+    font-size: 1.4rem;
+  }
+  .search-list {
+    width: 90%;
+    right: 50%;
+    transform: translatex(50%);
+  }
+  .search-list .search-list-item {
+    width: 100%;
+  }
+  .misc-info {
+    flex-direction: column;
+  }
+  .misc-info li:nth-child(2) {
+    margin: 0.8rem 0;
+  }
+}
+
+@media (min-width: 800px) {
+  .search-element {
+    flex-direction: row;
+  }
+  .search-element h3 {
+    margin-bottom: 0;
+  }
+  .result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .movie-info {
+    text-align: left;
+    padding-top: 0;
+  }
+  .movie-info .misc-info {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+  .movie-info .writer {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search</title>
+    <!-- benchnine font -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="wrapper">
+      <div class="logo">
+        <div class="container">
+          <!-- Movie Search Logo -->
+          <img
+            src="./images/ms-logo.png"
+            alt="Movie Search Logo"
+            height="117"
+            width="500"
+            id="mainlogo"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Search Container -->
+      <div class="search-container">
+        <div class="search-element">
+          <h1>Search Movie:</h1>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Movie Name..."
+            id="movie-search-box"
+            onkeyup="findMovies()"
+            onclick="findMovies()"
+          />
+          <div class="search-list" id="search-list">
+            <!-- list here -->
+            <!-- <div class="search-list-item">
+                        <div class="search-item-thumbnail">
+                            <img src="./images/tcpmedium.jpg">
+                        </div>
+                        <div class="search-item-info">
+                            <h3>The Color Purple</h3>
+                            <p>1985</p>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- Results Container -->
+      <div class="container">
+        <div class="result-container">
+          <div class="result-grid" id="result-grid">
+            <!-- movie info -->
+            <!-- <div class="poster">
+                        <img src="./images/tcpmedium.jpg" alt="movie poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title">The Color Purple</h3>
+                        <ul class="misc-info">
+                            <li class="year">Year: 1985</li>
+                            <li class="rated">Rating: PG-13</li>
+                            <li class="released"><strong>Released:</strong> 07 Feb 1986</li>
+                        </ul>
+                        <p class="genre"><strong>Genre:</strong> Drama</p>
+                        <p class="writer"><strong>Writer:</strong> Menno Meyjes, Alice Walker</p>
+                        <p class="actors"><strong>Actors:</strong> Danny Glover, Whoopi Goldberg, Oprah Winfrey</p>
+                        <p class="plot"><strong>Plot:</strong> A black Southern woman struggles to find her identity after suffering abuse from her father and others over four decades.</p>
+                        <p class="language">Language: English</p>
+                        <p class="awards"><strong>Awards:</strong> Nominated for 11 Oscars. 14 wins & 23 nominations total</p>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
