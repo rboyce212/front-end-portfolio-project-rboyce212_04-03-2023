@@ -1,0 +1,73 @@
+:root {
+  --md-dark-color: #1d1d1d;
+  --dark-color: #171717;
+  --light-dark-color: #292929;
+  --yellor-color: #d4aa11;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--light-dark-color);
+  color: gold;
+}
+
+.wrapper {
+  min-height: 100px;
+  background-color: black;
+  color: gold;
+}
+
+.logo {
+  vertical-align: text-bottom;
+  padding-left: 50px;
+}
+
+.wrapper .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.list-container {
+  padding-left: 100px;
+}
+
+li {
+  padding: 4px;
+}
+
+main {
+  padding-top: 25px;
+}
+
+.hover_img a {
+  position: relative;
+}
+.hover_img a span {
+  position: absolute;
+  display: none;
+  z-index: 99;
+}
+.hover_img a:hover span {
+  display: block;
+}
+
+.footer {
+  color: rgb(245, 244, 239);
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: text-bottom;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  background-color: black;
+  padding-top: 25px;
+}
+
+a {
+  color: aqua;
+}
