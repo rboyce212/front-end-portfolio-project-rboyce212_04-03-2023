@@ -13,6 +13,7 @@
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  background-color: black;
 }
 
 a {
@@ -276,4 +277,12 @@ search-list::-webkit-scrollbar-track {
     padding-left: 0;
     margin-left: 0;
   }
+}
+
+.footer {
+  color: rgb(245, 244, 239);
+  font-family: Arial, Helvetica, sans-serif;
+  vertical-align: text-bottom;
+  padding-bottom: 10px;
+  padding-left: 25px;
 }
