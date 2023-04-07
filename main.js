@@ -1,5 +1,5 @@
 // Titles: https://omdbapi.com/?s=the_color_purple&page=1&apikey=83f03a21
-// details: http://www.omdbapi.com/?i=tt0088939&apikey=83f03a21
+// details: https://www.omdbapi.com/?i=tt0088939&apikey=83f03a21
 
 const movieSearchBox = document.getElementById("movie-search-box");
 const searchList = document.getElementById("search-list");
